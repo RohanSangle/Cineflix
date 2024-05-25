@@ -1,0 +1,13 @@
+export { default as favicon32x32 } from './favicon-32x32.png';
+export { default as iconCategoryMovie } from './icon-category-movie.svg';
+export { default as iconNavHome } from './icon-nav-home.svg';
+export { default as iconPlay } from './icon-play.svg';
+export { default as logo } from './logo.svg';
+export { default as iconBookmarkEmpty } from './icon-bookmark-empty.svg';
+export { default as iconCategoryTV } from './icon-category-tv.svg';
+export { default as iconNavMovies } from './icon-nav-movies.svg';
+export { default as iconSearch } from './icon-search.svg';
+export { default as iconBookmarkFull } from './icon-bookmark-full.svg';
+export { default as iconNavBookmark } from './icon-nav-bookmark.svg';
+export { default as iconNavTVSeries } from './icon-nav-tv-series.svg';
+export { default as imageAvatar } from './image-avatar.png';
