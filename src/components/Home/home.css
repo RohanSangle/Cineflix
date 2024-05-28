@@ -1,0 +1,19 @@
+h1{
+    position: absolute;
+    left: 10%;
+    top: 5%;
+}
+
+h2{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+}
+
+button{
+    position: absolute;
+    top: 60%;
+    height: 10%;
+    width: 10%;
+    left: 45%;
+}
