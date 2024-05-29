@@ -1,14 +1,14 @@
 import React from 'react'
 import './card.css'
 
-import beyondearth from '../../assets/thumbnails/beyond-earth/regular/large.jpg'
+// import beyondearth from '../../assets/thumbnails/beyond-earth/regular/large.jpg'
 import play from '../../assets/icon-play.svg'
 import bookmarkempty from '../../assets/icon-bookmark-empty.svg'
 
-const Card = () => {
+const Card = (props) => {
   return (
     <div className='card'>
-      <img className='bgimg' src={beyondearth} alt='' />
+      <img className='bgimg' src={require(`../../assets/${props.thumbnail.regular.medium}`)} alt='' />
 
       <div className='playbutton'>
         <img className='play' src={play} alt=''/>
@@ -20,15 +20,15 @@ const Card = () => {
       </div>
 
       <div className='subtitle'>
-        <h5>2019</h5>
+        <h5>{props.year}</h5>
         <p>.</p>
         <img src='' alt=''/>
-        <h5>Movie</h5>
+        <h5>{props.category}</h5>
         <p>.</p>
-        <h5>PG</h5>
+        <h5>{props.rating}</h5>
       </div>
 
-      <h3 className='title'>Beyond Earth</h3>
+      <h3 className='title'>{props.title}</h3>
 
     </div>
   )

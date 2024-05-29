@@ -10,16 +10,25 @@
 h2{
     width: 20%;
     height: 8%;
-    left: 13%;
+    left: 12%;
     top: 65%;
     /* background-color: blue; */
 }
 
 .card-background{
-    width: 85%;
+    width: 87%;
     height: 100%;
     background-color: blue;
-    margin-left: 13%;
+    margin-left: 12%;
     margin-top: 28%;
+    /* display: grid; */
+    /* flex-direction: row; */
+    /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
+    /* margin: 20px auto; */
+    display:flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    /* overflow: auto; */
+    /* flex-direction: row; */
 
 }
