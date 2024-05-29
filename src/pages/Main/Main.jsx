@@ -1,9 +1,13 @@
 import React from 'react'
 import './main.css'
 
+import MenuBar from '../../components/menuBar/MenuBar.jsx'
+
 const Main = () => {
   return (
-    <div>Main</div>
+    <>
+      <MenuBar/>
+    </>
   )
 }
 
