@@ -8,7 +8,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   const gotoauth = () => {
-    navigate('/auth');
+    navigate('/login');
   }
 
   return (

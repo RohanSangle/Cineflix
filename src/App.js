@@ -3,19 +3,21 @@ import './App.css'
 import { BrowserRouter as Router, Routes } from 'react-router-dom';
 import {Route} from 'react-router';
 
-import Home from './components/Home/Home.jsx';
-import Auth from './components/Auth/Auth.jsx';
-import Main from './components/Main/Main.jsx';
-import Movies from './components/Movies/Movies.jsx';
-import TvSeries from './components/TvSeries/TvSeries.jsx';
-import Bookmarks from './components/Bookmarks/Bookmarks.jsx';
+import Home from './pages/Home/Home.jsx';
+import Login from './pages/Auth/login/Loginn.jsx';
+import Register from './pages/Auth/register/Register.jsx';
+import Main from './pages/Main/Main.jsx';
+import Movies from './pages/Movies/Movies.jsx';
+import TvSeries from './pages/TvSeries/TvSeries.jsx';
+import Bookmarks from './pages/Bookmarks/Bookmarks.jsx';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/auth" exact element={<Auth/>}/>
+        <Route path="/login" exact element={<Login/>}/>
+        <Route path="/register" exact element={<Register/>}/>
         <Route path='/main' exact element={<Main/>}/>
         <Route path='/movies' exact element={<Movies/>}/>
         <Route path='/tvseries' exact element={<TvSeries/>}/>
