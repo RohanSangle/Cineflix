@@ -6,3 +6,20 @@
     background-color: #10141e;
     color: white;
 }
+
+h2{
+    width: 20%;
+    height: 8%;
+    left: 13%;
+    top: 65%;
+    /* background-color: blue; */
+}
+
+.card-background{
+    width: 85%;
+    height: 100%;
+    background-color: blue;
+    margin-left: 13%;
+    margin-top: 28%;
+
+}

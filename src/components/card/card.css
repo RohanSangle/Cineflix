@@ -1,0 +1,96 @@
+.card{
+    width: 25%;
+    height: 35%;
+    /* margin-top: 10%; */
+    margin-right: 1%;
+    margin-bottom: 1%;
+    border-radius: 10px;
+    /* margin-left: 1%; */
+    background-color: pink;
+
+}
+
+.bgimg{
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+.playbutton{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    height: 22%;
+    border-radius: 30px;
+    margin-left: 30%;
+    margin-top: -40%;
+    background-color: #fff3;
+    /* border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb; */
+    transition: ease-in-out .3s;
+    /* opacity: 0; */
+    /* z-index: 100; */
+    
+    >h4{
+        height: 55%;
+        width: 35%;
+        margin-left: 15%;
+        margin-top: 10%;
+        background-color: #fff3;
+        border-width: 0;
+        border-style: solid;
+        border-color: #e5e7eb;
+    }
+}
+.play{
+    width: 30px;
+    height: 80%;
+    margin-top: 5%;
+    margin-left: 8%;
+    background-color: #fff3;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+
+.bookmark-shade{
+    position: relative;
+    width: 10%;
+    height: 15%;
+    margin-left: 85%;
+    margin-top: -35%;
+    border-radius: 8px;
+    background-color: #00000080;
+}
+.bookmarkbutton{
+    height: 60%;
+    width: 60%;
+    margin-top: 20%;
+    margin-left: 20%;
+    background-color: inherit;
+}
+
+.subtitle{
+    display: flex;
+    flex-direction: row;
+    height: 8%;
+    width: 55%;
+    margin-top: 46%;
+    /* align-items: center;
+    justify-content: center; */
+
+    >p{
+        font-size: 20px;
+        margin-top: -8%;
+        margin-left: 6%;
+        height: 1%;
+    }
+}
+
+.title{
+    width: 100%;
+    height: 10%;
+    background-color: red;
+}
