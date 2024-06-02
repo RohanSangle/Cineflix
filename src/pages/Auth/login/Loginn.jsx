@@ -7,8 +7,8 @@ import {Link} from 'react-router-dom';
 
 const Loginn = () => {
   return (
-    <div className="auth-page">
-      <img src={logo} alt=""/>
+    <div className="login-page">
+      <img className='logo3' src={logo} alt=""/>
       <div className='form-wrapper'>
         <h2 className='form-title'>Login</h2>
         <form className='form'>
@@ -34,7 +34,7 @@ const Loginn = () => {
             />
             {/* {errors.password && <span className="error">{errors.password}</span>} */}
           </div>
-          <button className='submit-button' type="submit">Login to your account</button>
+          <button className='submit-button' type="submit">Login</button>
           <p className="login-hint">Don't have an account?<Link to='/register'>Sign Up</Link></p>
         </form>
       </div>

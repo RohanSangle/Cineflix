@@ -1,0 +1,35 @@
+.form-wrapper2{
+    width: 30%;
+    height: 70%;
+    margin-top: 10%;
+    margin-left: 35%;
+    border-radius: 20px;
+    background-color: hsl(223 36% 14%);
+}
+
+.input-wrapper2{
+    margin-top: 5%;
+    margin-left: 10%;
+    /* width: 80%; */
+    height: 22%;
+    >input{
+        border: unset;
+        outline: unset;
+        border-bottom: 1px solid grey;
+        background-color: hsl(223 36% 14%);
+    }
+    >input:focus{
+        border-color: white;
+    }
+}
+
+.submit-button2{
+    position: relative;
+    width: 100%;
+    margin-left: -35%;
+    top: 10%;
+    height: 25%;
+    border-radius: 10px;
+    border: 0;
+    background-color: #fc4545;
+}

@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div>
       <h1>Cineflix</h1>
-      <h2>Watch latest movies, TV shows and more</h2>
+      <h2 className='miniheader' >Watch latest movies, TV shows and more</h2>
       <button onClick={gotoauth}>Sign In</button>
     </div>
   )

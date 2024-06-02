@@ -7,12 +7,12 @@ import {Link} from 'react-router-dom';
 
 const Register = () => {
   return (
-    <div className="auth-page">
-      <img src={logo} alt="" />
-      <div className='form-wrapper'>
+    <div className="login-page">
+      <img className='logo3' src={logo} alt="" />
+      <div className='form-wrapper2'>
         <h2 className='form-title'>Sign up</h2>
         <form className='form'>
-          <div className='input-wrapper'>
+          <div className='input-wrapper2'>
             <input
               placeholder='Email address'
               type="email"
@@ -22,7 +22,7 @@ const Register = () => {
             />
             {/* {errors.email && <span className="error">{errors.email}</span>} */}
           </div>
-          <div className='input-wrapper'>
+          <div className='input-wrapper2'>
             <input
               placeholder='Password'
               type="password"
@@ -32,7 +32,7 @@ const Register = () => {
             />
             {/* {errors.password && <span className="error">{errors.password}</span>} */}
           </div>
-          <div className='input-wrapper'>
+          <div className='input-wrapper2'>
             <input
               placeholder='Repeat password'
               type="password"
@@ -42,7 +42,7 @@ const Register = () => {
             />
             {/* {errors.password2 && <span className="error">{errors.password2}</span>} */}
           </div>
-          <button className='submit-button' type="submit">Create an account</button>
+          <button className='submit-button2' type="submit">Sign Up</button>
           <p className="login-hint">Already have an account?<Link to={'/login'}>Login</Link></p>
         </form>
       </div>
