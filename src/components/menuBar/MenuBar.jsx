@@ -20,13 +20,13 @@ const MenuBar = () => {
     navigate('/main');
   }
   const gotomovies = () =>{
-    navigate('/movies');
+    navigate('/main/movies');
   }
   const gototvseries = () =>{
-    navigate('/tvseries');
+    navigate('/main/tvseries');
   }
   const gotobookmarks = () =>{
-    navigate('/bookmarks');
+    navigate('/main/bookmarks');
   }
 
   return (

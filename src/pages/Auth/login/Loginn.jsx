@@ -23,10 +23,14 @@ const Loginn = () => {
     }
   }
 
+  if(userLoggedIn){
+    return <Navigate to="/main" replace={true} />
+  }
+
 
   return (
     <div className="login-page">
-      {userLoggedIn && (<Navigate to={'/main'} replace={true}/>)}
+      {/* {userLoggedIn && (<Navigate to={'/main'} replace={true}/>)} */}
 
       <img className='logo3' src={logo} alt=""/>
       <div className='form-wrapper'>
