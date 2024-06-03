@@ -4,6 +4,8 @@ import './card.css'
 // import beyondearth from '../../assets/thumbnails/beyond-earth/regular/large.jpg'
 import play from '../../assets/icon-play.svg'
 import bookmarkempty from '../../assets/icon-bookmark-empty.svg'
+import moviecategory from '../../assets/icon-category-movie.svg'
+import tvcategory from '../../assets/icon-category-tv.svg'
 
 const Card = (props) => {
   return (
@@ -22,7 +24,7 @@ const Card = (props) => {
       <div className='subtitle'>
         <h5>{props.year}</h5>
         <p>.</p>
-        <img src='' alt=''/>
+        <img className='categoryicon' src={props.category === 'Movie' ?  moviecategory : tvcategory} alt=''/>
         <h5>{props.category}</h5>
         <p>.</p>
         <h5>{props.rating}</h5>

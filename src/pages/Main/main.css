@@ -7,11 +7,33 @@
     color: white;
 }
 
-h2{
+.trendingtitle{
+    position: relative;
     width: 20%;
     height: 8%;
-    left: 12%;
-    top: 65%;
+    margin-left: 12%;
+    /* top: 25%; */
+    /* background-color: blue; */
+}
+
+.trendingcontainer{
+    width: 88%;
+    height: 40%;
+    /* margin-top: 5%; */
+    margin-left: 12%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    /* gap: 20px; */
+    background-color: blue;
+}
+
+.recommendtitle{
+    position: relative;
+    width: 20%;
+    height: 8%;
+    margin-left: 12%;
+    top: 6%;
     /* background-color: blue; */
 }
 
@@ -20,15 +42,13 @@ h2{
     height: 100%;
     background-color: blue;
     margin-left: 12%;
-    margin-top: 28%;
-    /* display: grid; */
-    /* flex-direction: row; */
-    /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
-    /* margin: 20px auto; */
-    display:flex;
-    /* flex-direction: row; */
-    flex-wrap: wrap;
-    /* overflow: auto; */
-    /* flex-direction: row; */
+    margin-top: 4%;
+    /* display:flex; */
+    /* flex-wrap: wrap; */
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px;
+    gap: 20px;
 
 }

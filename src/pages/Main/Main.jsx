@@ -11,8 +11,21 @@ const Main = () => {
     <>
       <MenuBar/>
       <SearchBar/>
-      {/* <h2>Trending</h2> */}
-      <h2>Recommended for you</h2>
+      <h2 className='trendingtitle'>Trending</h2>
+      <div className='trendingcontainer'>
+        {data.filter(item => item.isTrending).map((noteItem)=>(
+          <Card
+            key={noteItem.id}
+            thumbnail={noteItem.thumbnail}
+            title={noteItem.title}
+            year={noteItem.year}
+            category={noteItem.category}
+            rating={noteItem.rating}
+
+          />
+        ))}
+      </div>
+      <h2 className='recommendtitle'>Recommended for you</h2>
       <div className='card-background'>
         {data.map((noteItem)=>(
           <Card
