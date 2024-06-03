@@ -2,6 +2,7 @@ import React from 'react'
 import './menubar.css'
 
 import {useNavigate} from "react-router-dom";
+import { doSignOut } from '../../firebase/auth';
 
 import logo from '../../assets/logo.svg'
 import iconNavHome from '../../assets/icon-nav-home.svg'
@@ -41,7 +42,7 @@ const MenuBar = () => {
 
       <div className='user-avatar'>
         <img src={imageAvatar} alt=""/>
-        <button className='logout-button'>Logout</button>
+        <button className='logout-button' onClick={()=>{doSignOut().then(()=>{navigate('/')})}}>Logout</button>
       </div>
     </div>
   )

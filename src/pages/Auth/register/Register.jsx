@@ -28,7 +28,7 @@ const Register = () => {
 
   return (
     <div className="login-page">
-      {userLoggedIn && (<Navigate to={'/main'} replace={true} />)}
+      {userLoggedIn && (<Navigate to={'/login'} replace={true} />)}
 
       <img className='logo3' src={logo} alt="" />
       <div className='form-wrapper2'>
