@@ -5,6 +5,7 @@
     height: 100%;
     background-color: #10141e;
     color: white;
+    /* overflow-x: hidden; */
 }
 
 .trendingtitle{
@@ -19,13 +20,24 @@
 .trendingcontainer{
     width: 88%;
     height: 40%;
-    /* margin-top: 5%; */
     margin-left: 12%;
     display: flex;
     flex-direction: row;
-    overflow-x: scroll;
-    /* gap: 20px; */
+    overflow-x: auto;
     background-color: blue;
+}
+.trendingcontainer::-webkit-scrollbar{
+    /* background-color: #10141e; */
+    /* width: 2px; */
+    height: 10px;
+}
+.trendingcontainer::-webkit-scrollbar-track{
+    background: #181d2b;
+    border-radius: 10px;
+}
+.trendingcontainer::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
 }
 
 .recommendtitle{

@@ -8,9 +8,12 @@ import moviecategory from '../../assets/icon-category-movie.svg'
 import tvcategory from '../../assets/icon-category-tv.svg'
 
 const Card = (props) => {
+
+  const imagePath = props.isTrending ? props.thumbnail.regular.large : props.thumbnail.regular.medium;
+
   return (
-    <div className='card'>
-      <img className='bgimg' src={require(`../../assets/${props.thumbnail.regular.medium}`)} alt='' />
+    <div className={`${props.isTrending ? 'trending-card' : 'card'}`}>
+      <img className='bgimg' src={require(`../../assets/${imagePath}`)} alt='' />
 
       <div className='playbutton'>
         <img className='play' src={play} alt=''/>

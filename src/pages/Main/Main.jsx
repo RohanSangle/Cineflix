@@ -21,6 +21,7 @@ const Main = () => {
             year={noteItem.year}
             category={noteItem.category}
             rating={noteItem.rating}
+            isTrending={noteItem.isTrending}
 
           />
         ))}
