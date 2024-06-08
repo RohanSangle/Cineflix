@@ -3,7 +3,7 @@ import './searchbar.css'
 
 import iconSearch from '../../assets/icon-search.svg'
 
-const SearchBar = () => {
+const SearchBar = ({onSearch}) => {
   return (
     <div className='search'>
       <img src={iconSearch} alt=''/>
@@ -13,6 +13,7 @@ const SearchBar = () => {
         name='search' 
         id='search'
         autoComplete='off'
+        onChange={onSearch}
       />
     </div>
   )
