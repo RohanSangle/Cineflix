@@ -3,7 +3,6 @@
     width: 7%;
     background-color: hsl(223 36% 14%);
     border-radius: 10px;
-    /* margin-top: 2%; */
     top: 5%;
     margin-left: 2%;
     position: fixed;
@@ -31,7 +30,6 @@
     margin-top: 100%;
     
     >img{
-        /* background-color: hsl(223 36% 14%); */
         background-color: transparent;
         width: 80%;
         height: 8%;
@@ -39,7 +37,6 @@
     }
     >img:hover{
         cursor: pointer;
-        /* filter: #fc4545; */
         filter: invert(42%) sepia(95%) saturate(2746%) hue-rotate(326deg) brightness(98%) contrast(96%);
         
     }
@@ -64,19 +61,15 @@
     border: unset;
     color: white;
     position: absolute;
-    /* top: -10px; */
     width: 60px;
     height: 20px;
     border-radius: 10px;
-    /* margin-left: 2%; */
     background-color: #fc4545;
-    /* top: -2%; */
     left: 5%;
     transform: translate(-23%, -30%);
     opacity: 0;
     transition: 0.6s cubic-bezier(0, 0.39, 0.87, 1.08);
     cursor: pointer;
-    /* padding: 10px; */
 }
 
 .user-avatar:hover .logout-button {

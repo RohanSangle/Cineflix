@@ -23,8 +23,8 @@
 .form-title{
     position: relative;
     top: 10%;
-    margin-left: -4%;
-    /* height: 10%; */
+    margin-left: 8%;
+    height: 10%;
     width: 50%;
     background-color: hsl(223 36% 14%);
 }
@@ -39,7 +39,6 @@
 .input-wrapper{
     margin-top: 5%;
     margin-left: 10%;
-    /* width: 80%; */
     height: 30%;
     >input{
         border: unset;

@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import './card.css'
 
-// import beyondearth from '../../assets/thumbnails/beyond-earth/regular/large.jpg'
 import play from '../../assets/icon-play.svg'
 import bookmarkempty from '../../assets/icon-bookmark-empty.svg'
 import bookmarkfull from '../../assets/icon-bookmark-full.svg'

@@ -21,19 +21,6 @@ const MenuBar = () => {
     navigate(path);
     setSelected(name);
   };
-  
-  // const gotomain = () =>{
-  //   navigate('/main');
-  // }
-  // const gotomovies = () =>{
-  //   navigate('/main/movies');
-  // }
-  // const gototvseries = () =>{
-  //   navigate('/main/tvseries');
-  // }
-  // const gotobookmarks = () =>{
-  //   navigate('/main/bookmarks');
-  // }
 
   return (
     <div className='menu-bar'>
