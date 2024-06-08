@@ -71,4 +71,9 @@
     margin-top: 15%;
     margin-left: 20%;
     background-color: hsl(223 36% 14%);
+
+    a{
+        background-color: hsl(223 36% 14%);
+        color: #fc4545;
+    }
 }

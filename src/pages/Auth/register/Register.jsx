@@ -71,7 +71,7 @@ const Register = () => {
             {/* {errors.password2 && <span className="error">{errors.password2}</span>} */}
           </div>
           <button className='submit-button2' type="submit" disabled={isRegistering}>Sign Up</button>
-          <p className="login-hint">Already have an account?<Link to={'/login'}>Login</Link></p>
+          <p className="login-hint">Already have an account? <Link to={'/login'}>Login</Link></p>
         </form>
       </div>
     </div>

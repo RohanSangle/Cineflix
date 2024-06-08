@@ -62,7 +62,7 @@ const Loginn = () => {
             {/* {errors.password && <span className="error">{errors.password}</span>} */}
           </div>
           <button className='submit-button' type="submit" disabled={isSigningIn}>Login</button>
-          <p className="login-hint">Don't have an account?<Link to='/register'>Sign Up</Link></p>
+          <p className="login-hint">Don't have an account? <Link to='/register'>Sign Up</Link></p>
         </form>
       </div>
     </div>
