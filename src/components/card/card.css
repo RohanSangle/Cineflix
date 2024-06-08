@@ -6,7 +6,7 @@
     margin-bottom: 1.5%;
     border-radius: 10px;
     /* margin-left: 1%; */
-    background-color: pink;
+    /* background-color: pink; */
     flex: 250px;
 }
 .card:hover .playbutton{
@@ -90,8 +90,12 @@
         width: 10%;
         
     }
+    h5{
+        font-weight: 300;
+
+    }
     h5:nth-of-type(2){
-        width: 200%;
+        width: 153%;
     }
 }
 
@@ -105,8 +109,10 @@
 .title{
     width: 100%;
     height: 10%;
-    margin-top: 1%;
-    background-color: red;
+    margin-top: 3%;
+    font-weight: 500;
+    font-size: 1.1rem;
+    /* background-color: red; */
     
 }
 
@@ -116,7 +122,7 @@
     border-radius: 10px;
     margin-right: 1%;
     flex: 0 0 auto;
-    background-color: pink;
+    /* background-color: pink; */
     /* box-sizing: border-box; */
     
 
@@ -137,11 +143,17 @@
     }
     .title{
         position: relative;
-        top: -10%;
+        top: -14%;
+        font-weight: 500;
+        /* font-size: 1rem; */
+        margin-left: 2%;
+        width: 98%;
+        background-color: transparent;
     }
     h5{
-        background-color: rgba(255, 255, 255, 0.3);
-        border-radius: 5px;
+        /* background-color: rgba(255, 255, 255, 0.3); */
+        /* border-radius: 5px; */
+        background-color: transparent;
     }
     .playbutton{
         width: 25%;

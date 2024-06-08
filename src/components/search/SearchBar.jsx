@@ -14,6 +14,7 @@ const SearchBar = () => {
         type='search' 
         name='search' 
         id='search'
+        autoComplete='off'
       />
     </div>
   )

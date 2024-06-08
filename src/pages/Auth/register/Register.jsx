@@ -41,6 +41,7 @@ const Register = () => {
               name="email"
               required
               value={email}
+              autoComplete='off'
               onChange={(e) => { setEmail(e.target.value)}}
             />
             {/* {errors.email && <span className="error">{errors.email}</span>} */}

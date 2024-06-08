@@ -21,6 +21,7 @@ const Bookmarks = () => {
             year={noteItem.year}
             category={noteItem.category}
             rating={noteItem.rating}
+            isBookmarked={noteItem.isBookmarked}
 
           />
         ))}

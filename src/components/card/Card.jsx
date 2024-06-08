@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './card.css'
 
 // import beyondearth from '../../assets/thumbnails/beyond-earth/regular/large.jpg'
 import play from '../../assets/icon-play.svg'
 import bookmarkempty from '../../assets/icon-bookmark-empty.svg'
+import bookmarkfull from '../../assets/icon-bookmark-full.svg'
 import moviecategory from '../../assets/icon-category-movie.svg'
 import tvcategory from '../../assets/icon-category-tv.svg'
 
 const Card = (props) => {
+
+  const [marked, setMarked] = useState(props.isBookmarked);
+
+  const togglemarked = () =>{
+    setMarked(!marked);
+  }
 
   const imagePath = props.isTrending ? props.thumbnail.regular.large : props.thumbnail.regular.medium;
 
@@ -21,7 +28,7 @@ const Card = (props) => {
       </div>
 
       <div className='bookmark-shade'>
-        <img className='bookmarkbutton' src={bookmarkempty} alt=''/>
+        <img className='bookmarkbutton' src={marked ? bookmarkfull : bookmarkempty} alt='' onClick={togglemarked}/>
       </div>
 
       <div className='subtitle'>

@@ -21,6 +21,7 @@ const Main = () => {
             year={noteItem.year}
             category={noteItem.category}
             rating={noteItem.rating}
+            isBookmarked={noteItem.isBookmarked}
             isTrending={noteItem.isTrending}
 
           />
@@ -36,6 +37,7 @@ const Main = () => {
             year={noteItem.year}
             category={noteItem.category}
             rating={noteItem.rating}
+            isBookmarked={noteItem.isBookmarked}
 
           />
         ))}

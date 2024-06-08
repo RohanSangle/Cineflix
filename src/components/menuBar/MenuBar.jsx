@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './menubar.css'
 
 import {useNavigate} from "react-router-dom";
@@ -15,29 +15,35 @@ import imageAvatar from '../../assets/image-avatar.png'
 const MenuBar = () => {
 
   const navigate = useNavigate();
+  const [selected, setSelected] = useState('home');
+
+  const handleNavigation = (path, name) => {
+    navigate(path);
+    setSelected(name);
+  };
   
-  const gotomain = () =>{
-    navigate('/main');
-  }
-  const gotomovies = () =>{
-    navigate('/main/movies');
-  }
-  const gototvseries = () =>{
-    navigate('/main/tvseries');
-  }
-  const gotobookmarks = () =>{
-    navigate('/main/bookmarks');
-  }
+  // const gotomain = () =>{
+  //   navigate('/main');
+  // }
+  // const gotomovies = () =>{
+  //   navigate('/main/movies');
+  // }
+  // const gototvseries = () =>{
+  //   navigate('/main/tvseries');
+  // }
+  // const gotobookmarks = () =>{
+  //   navigate('/main/bookmarks');
+  // }
 
   return (
     <div className='menu-bar'>
       <img className='logo2' src={logo} alt=''/>
 
       <div className='list'>
-        <img onClick={gotomain} src={iconNavHome} alt=""/>
-        <img onClick={gotomovies} src={iconNavMovies} alt=""/>
-        <img onClick={gototvseries} src={iconNavTVSeries} alt=""/>
-        <img onClick={gotobookmarks} src={iconNavBookmark} alt=""/>
+        <img className={selected === 'movies' ? 'selected' : ''} onClick={() => handleNavigation('/main', 'home')} src={iconNavHome} alt=""/>
+        <img className={selected === 'movies' ? 'selected' : ''} onClick={() => handleNavigation('/main/movies', 'movies')} src={iconNavMovies} alt=""/>
+        <img className={selected === 'movies' ? 'selected' : ''} onClick={() => handleNavigation('/main/tvseries', 'tvseries')} src={iconNavTVSeries} alt=""/>
+        <img className={selected === 'movies' ? 'selected' : ''} onClick={() => handleNavigation('/main/bookmarks', 'bookmarks')} src={iconNavBookmark} alt=""/>
       </div>
 
       <div className='user-avatar'>

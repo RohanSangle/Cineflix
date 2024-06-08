@@ -43,6 +43,7 @@ const Loginn = () => {
               name="email"
               required
               value={email}
+              autoComplete='off'
               onChange={(e)=>{setEmail(e.target.value)}}
 
             />
