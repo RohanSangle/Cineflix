@@ -1,25 +1,9 @@
-# Frontend Mentor - Entertainment web app solution
+## Cineflix
 
 This is a solution to the [Entertainment web app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/entertainment-web-app-J-UhgAW1X). Frontend Mentor challenges help you improve your coding skills by building realistic project.
 
-## Table of contents
 
-- [Overview](#overview)
-    - [The challenge](#the-challenge)
-    - [Screenshot](#screenshot)
-    - [Links](#links)
-- [My process](#my-process)
-    - [Built with](#built-with)
-    - [What I learned](#what-i-learned)
-    - [Continued development](#continued-development)
-    - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-
-## Overview
-
-### The challenge
+## The challenge
 
 Users should be able to:
 
@@ -31,85 +15,38 @@ Users should be able to:
 - **Bonus**: Build this project as a full-stack application
 - **Bonus**: If you're building a full-stack app, we provide authentication screen (sign-up/login) designs if you'd like to create an auth flow
 
-### Screenshot
+## Screenshot
 
-![](./screenshot.png)
+[![photo-2024-06-09-03-16-25.jpg](https://i.postimg.cc/3JcGXxSh/photo-2024-06-09-03-16-25.jpg)](https://postimg.cc/2Vn3mrN9)
 
-### Links
+[![photo-2024-06-09-03-16-28.jpg](https://i.postimg.cc/J4nJHkQK/photo-2024-06-09-03-16-28.jpg)](https://postimg.cc/SjBjwj3z)
 
-- Solution URL: [Add solution URL here](https://github.com/amjadsh97/entertainment-web-app)
-- Live Site URL: [Add live site URL here](https://entertainment-web-app-liart-phi.vercel.app/)
+[![photo-2024-06-09-03-16-31.jpg](https://i.postimg.cc/YCLWbBZW/photo-2024-06-09-03-16-31.jpg)](https://postimg.cc/rDcsw38V)
+
 
 ## My process
 
-### Built with
+This was one of the best project which i have done on React.js as when i saw the design layouts on what all to add, it clicked my head that here we will need to create a card component and simply mapit to the data.json file, and then just simply arrange in grids format.
+For different pages like movies, tvseries, bookmarks i had to just use fiter method to get the right cards on that page.
+Search functionality was also simple, just used a state to manage what string is being typed and according to the characters in that string map the cards which have those charachters in the titles.
+The authentication part was handeled by firebase.
+The tough part here which i found out was to add routes to the pages and also creating public and protected routes.
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Typescript
-- [React](https://reactjs.org/) - JS library
-- [React Router Dom](https://reactrouter.com/en/main) - JS library
-- [Firebase](https://firebase.google.com/) - backend auth
+## Tech Stack
 
-
-### What I learned
-
-
-```js
-const [data, setData] = useState<Video[]>([]);
-
-// Function to set data from local storage
-const setDataFromLocalStorage = () => {
-	const storedData: any = localStorage.getItem('data') || dataJSON;
-	if (storedData) {
-		setData(JSON.parse(storedData));
-	}
-};
-
-useEffect(() => {
-	setDataFromLocalStorage();
-}, []); // Run once on component mount
-
-//code to handle the differenet sizes of images
-{data.map((item: Video, index: number) => (
-	//some elements...
-	<article className={`card ${isTrending ? "card-overlay" : "stacked-card"}`} key={index}>
-      <picture>
-	    {item.isTrending && item.thumbnail.trending && (
-		<>
-			<source srcSet={require(`../../assets/${item.thumbnail.trending.large}`)}
-			        media='(min-width: 1170px)'/>
-			<img src={require(`../../assets/${item.thumbnail.trending.small}`)} alt=''/>
-		</>
-	    )}
-	    {!item.isTrending && (
-		  <>
-			<source srcSet={require(`../../assets/${item.thumbnail.regular.large}`)} media='(min-width: 1170px)'/>
-			<source srcSet={require(`../../assets/${item.thumbnail.regular.medium}`)} media='(min-width: 768px)'/>
-			<img src={require(`../../assets/${item.thumbnail.regular.small}`)} alt=''/>
-		  </>
-	    )}
-      </picture>
-    //some elements...
-    </article>
-))}
-```
-
-### Continued development
-
-In the future, I will prioritize further developing my skills in make full stack app  backend app.
+- React.js
+- React Router Dom
+- Firebase
+- Vanilla CSS
 
 
-### Useful resources
+## What I learned
 
-- [React Docs](https://react.dev/) - This helped me for building react components. I really liked using this docs.
+- how to use react-router-dom to to routing in web pages
+- how to manage public and private routes
+- to to map and filter data to card component
+- how to integrate firebase for authentication
 
+## Acknowledgements
 
-## Author
-
-- Website - [Amjad Shadid](https://amjadshadid.vercel.app/)
-- Frontend Mentor - [@amjadsh97](https://www.frontendmentor.io/profile/amjadsh97)
-- Twitter - [@Amjadshadid](https://twitter.com/Amjadshadid)
-- Linkedin - [@Amjad Shadid](https://www.linkedin.com/in/amjad-shadid-134355134/)
+I would like to acknowledge Frontend Mentor for providing such good level challeneges. This really helps me to understand in which part do I lack and how should I tackle it.
